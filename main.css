@@ -214,7 +214,7 @@ a {
 }
 
 .side-bar {
-	flex: 1 1 0;
+	/* flex: 1 1 0; */
 	max-width: 300px;
 	padding: 2rem 1rem;
 	background-color: rgb(230, 183, 55);
@@ -258,7 +258,7 @@ a {
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
 	.content {
 		padding-top: 8rem;
@@ -276,16 +276,21 @@ a {
 	.side-bar.is-active {
 		left: 0;
 	}
+	.overlay{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.213);
+		visibility: hidden;
+		transition: 0.2s;
+		z-index: 99;
+	}
 }
 
 .overlay{
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.213);
+	
 	visibility: hidden;
 	transition: 0.2s;
-	z-index: 99;
 }
