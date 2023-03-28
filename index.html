@@ -30,7 +30,7 @@
         <li class="dear logoTxt1 logoTxt"><span>DEAR</span></li>
         <li class="nav-logo-container">
 
-          <a href="#">
+          <a href="index.html">
             <svg class="logoImg" viewBox="0 0 512 512">
               <path
                 d="M45.1 224C29 224 16 211 16 194.9c0-1.9 .2-3.7 .6-5.6C21.9 168.3 62.8 32 240 32s218.1 136.3 223.4 157.3c.5 1.9 .6 3.7 .6 5.6c0 16.1-13 29.1-29.1 29.1H45.1zM128 128a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm240 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32zM256 96a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zM0 304c0-26.5 21.5-48 48-48H432c26.5 0 48 21.5 48 48s-21.5 48-48 48H48c-26.5 0-48-21.5-48-48zm16 96c0-8.8 7.2-16 16-16H448c8.8 0 16 7.2 16 16v16c0 35.3-28.7 64-64 64H80c-35.3 0-64-28.7-64-64V400z" />
@@ -42,34 +42,36 @@
         </li></div>
         <li class="nav-btn-container nav-btn-container-contact"><a class="nav-btn nav-contact" href="#">contact</a></li>
         <a href="#">
-          <svg class="barsImg" viewBox="0 0 448 512">
+          <svg onclick="log()" class="barsImg menu-toggle" viewBox="0 0 448 512">
             <path
               d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
           </svg>
         </a>
 
       </ul>
-
-
-
-
-
     </div>
 
   </nav>
+<!-- <div class="side-bar">
+  <a href="">&times</a>
+  <a href="">Home</a>
+  <a href="">About</a>
+  <a href="">Contact</a>
+  <a href="">&times</a>
+</div> -->
+<aside class="side-bar">
+  <!-- <h3>Menu</h3> -->
+  
+  <nav class="menu">
+    <a href="#" class="menu-item is-active">Home</a>
+    <a href="#" class="menu-item">About</a>
+    <a href="#" class="menu-item">Portfolio</a>
+    <a href="#" class="menu-item">Contact</a>
+  </nav>
 
-
-
-
-
-
-
-
-
-
-
-
-  <main>
+</aside>
+<div class="overlay" onclick="removeOverlay()"></div>
+  <main class="main">
     <div class="gallery-container">
       <div class="img"></div>
       <div class="img"></div>
@@ -91,5 +93,23 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 </body>
+<script src="main.js"></script>
+<script>
+  const menu_toggle = document.querySelector('.menu-toggle');
+  const sidebar = document.querySelector('.side-bar');
+  const overlay = document.querySelector('.overlay');
 
+
+  menu_toggle.addEventListener('click', () => {
+    menu_toggle.classList.toggle('is-active');
+    sidebar.classList.toggle('is-active');
+    overlay.style.visibility ==='visible' ?overlay.style.visibility ='hidden' : overlay.style.visibility ='visible'
+  });
+
+  function removeOverlay(){
+    overlay.style.visibility ='hidden';
+    menu_toggle.classList.toggle('is-active');
+    sidebar.classList.toggle('is-active');
+  }
+</script>
 </html>
