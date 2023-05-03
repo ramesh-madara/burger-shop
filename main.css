@@ -163,40 +163,7 @@ a {
 	margin-left: 2rem;
 }
 
-@media only screen and (max-width : 600px) {
 
-	.logoTxt {
-		display: none;
-	}
-
-	.barsImg {
-		display: inline;
-		margin-right: 10;
-		height: 2rem;
-
-	}
-
-	.barsImg-invisible {
-		fill: rgba(255, 255, 255, 0);
-
-	}
-
-
-
-
-	.navbar-nav .nav-items {
-		list-style: none;
-		display: flex;
-		align-items: flex-end;
-		justify-content: space-between;
-		flex-grow: 1;
-	}
-
-	.nav-menu,
-	.nav-contact {
-		display: none;
-	}
-}
 
 .red {
 	margin-top: 15px;
@@ -216,20 +183,29 @@ a {
 }
 
 .gallery-container .opening-soon {
+	flex-grow: 1;
 	font-family: 'Sora', sans-serif;
-	margin-top: 40vh;
+	margin-top: 35vh;
 	font-size: 500%;
-
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
 }
 
 .gallery-container .opening-soon .opening {
 	color: rgb(255, 204, 62);
+	margin: 5px;
 
 }
 
 .gallery-container .opening-soon .soon {
 	color: var(--color-burger);
+	margin: 5px;
+
 }
+
+
 
 .gallery-container .img {
 	display: flex;
@@ -335,4 +311,48 @@ a {
 	transition: 0.2s;
 }
 
+@media only screen and (max-width : 600px) {
+
+	.logoTxt {
+		display: none;
+	}
+
+	.barsImg {
+		display: inline;
+		margin-right: 10;
+		height: 2rem;
+
+	}
+
+	.barsImg-invisible {
+		fill: rgba(255, 255, 255, 0);
+
+	}
+
+
+
+
+	.navbar-nav .nav-items {
+		list-style: none;
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		flex-grow: 1;
+	}
+
+	.nav-menu,
+	.nav-contact {
+		display: none;
+	}
+	.gallery-container .opening-soon {
+		flex-grow: 1;
+		font-family: 'Sora', sans-serif;
+		margin-top: 35vh;
+		font-size: 200%;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+}
 /* madara */
