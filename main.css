@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@800&display=swap');
 
 :root {
 	--color-burger: rgb(139, 47, 14);
 }
-html{
+
+html {
 	background-color: antiquewhite;
 
 }
 
 body {
-	font-family: 'Tilt Neon', cursive;
+	font-family: 'Lily Script One', cursive;
 }
 
 * {
@@ -18,13 +21,15 @@ body {
 	padding: 0;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
 	width: 0.25rem;
 }
-body::-webkit-scrollbar-track{
+
+body::-webkit-scrollbar-track {
 	background-color: rgb(255, 241, 223);
 }
-body::-webkit-scrollbar-thumb{
+
+body::-webkit-scrollbar-thumb {
 	background-color: var(--color-burger);
 	border-radius: 5PX;
 }
@@ -36,13 +41,13 @@ body::-webkit-scrollbar-thumb{
 	width: 100%;
 	align-items: center;
 	justify-content: center;
-	background-color:rgb(255, 204, 62);
+	background-color: rgb(255, 204, 62);
 	box-shadow: 0px 3px 5px rgba(168, 106, 30, 0.197);
 	position: fixed;
 	margin-top: -3.4rem;
 	border-radius: 0px 0px 10px 10px;
 	z-index: 1
-	/* display: none; */
+		/* display: none; */
 }
 
 .navbar-nav {
@@ -59,17 +64,20 @@ body::-webkit-scrollbar-thumb{
 	justify-content: center;
 	flex-grow: 1;
 }
-.nav-mid{
+
+.nav-mid {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
 }
-.nav-logo-container{
+
+.nav-logo-container {
 	min-width: 5rem;
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
 }
+
 .logoImg {
 	width: 3rem;
 	height: 3rem;
@@ -105,17 +113,20 @@ main p {
 .logoTxt1 {
 	margin-right: 0rem;
 }
-.logoTxt2{
 
-}
-.dear, .burger {
+.logoTxt2 {}
+
+.dear,
+.burger {
 	min-width: 9rem;
 }
-.dear{
+
+.dear {
 	display: flex;
 	justify-content: flex-end;
 }
-.burger{
+
+.burger {
 	display: flex;
 	justify-content: flex-start;
 }
@@ -123,7 +134,8 @@ main p {
 a {
 	text-decoration: none;
 }
-.nav-btn-container{
+
+.nav-btn-container {
 	min-width: 5rem;
 	max-width: 5rem;
 
@@ -132,42 +144,45 @@ a {
 	justify-content: center;
 	align-items: flex-end;
 }
-.nav-btn-container-menu{
 
-}
-.nav-btn{
+.nav-btn-container-menu {}
+
+.nav-btn {
 	color: var(--color-burger);
 	margin-bottom: .3rem;
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
 }
-.nav-menu{
+
+.nav-menu {
 	margin-right: 2rem;
 }
-.nav-contact{
+
+.nav-contact {
 	margin-left: 2rem;
 }
 
 @media only screen and (max-width : 600px) {
-	
+
 	.logoTxt {
 		display: none;
 	}
 
 	.barsImg {
-		display:inline;
+		display: inline;
 		margin-right: 10;
 		height: 2rem;
 
 	}
-	.barsImg-invisible{
+
+	.barsImg-invisible {
 		fill: rgba(255, 255, 255, 0);
 
 	}
-	
 
-	
+
+
 
 	.navbar-nav .nav-items {
 		list-style: none;
@@ -176,26 +191,47 @@ a {
 		justify-content: space-between;
 		flex-grow: 1;
 	}
-	.nav-menu, .nav-contact {
+
+	.nav-menu,
+	.nav-contact {
 		display: none;
 	}
 }
-.red{
+
+.red {
 	margin-top: 15px;
 }
-.redd{
+
+.redd {
 	display: none;
 }
 
-.gallery-container{
+.gallery-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-content: flex-start;
 	flex-grow: 1;
+	font-family: 'Lily Script One', cursive;
 }
 
-.gallery-container .img{
+.gallery-container .opening-soon {
+	font-family: 'Sora', sans-serif;
+	margin-top: 40vh;
+	font-size: 500%;
+
+}
+
+.gallery-container .opening-soon .opening {
+	color: rgb(255, 204, 62);
+
+}
+
+.gallery-container .opening-soon .soon {
+	color: var(--color-burger);
+}
+
+.gallery-container .img {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
@@ -208,7 +244,8 @@ a {
 	box-shadow: 0px 10px 10px rgba(168, 106, 30, 0.197);
 
 }
-.gallery-container .img:hover{
+
+.gallery-container .img:hover {
 	box-shadow: 0px 10px 10px rgba(168, 106, 30, 0.342);
 	scale: 1.03;
 }
@@ -245,13 +282,14 @@ a {
 
 .side-bar .menu .menu-item:hover,
 .side-bar .menu .menu-item.is-active {
-	color:var(--color-burger);
-	border-right: 5px solid ;
+	color: var(--color-burger);
+	border-right: 5px solid;
 }
 
 .side-bar .menu .menu-item:hover {
 	border-right: 5px solid var(--color-burger);
 }
+
 @media (max-width: 1024px) {
 	.side-bar {
 		max-width: 200px;
@@ -263,6 +301,7 @@ a {
 	.content {
 		padding-top: 8rem;
 	}
+
 	.side-bar {
 		position: fixed;
 		top: 0;
@@ -276,7 +315,8 @@ a {
 	.side-bar.is-active {
 		left: 0;
 	}
-	.overlay{
+
+	.overlay {
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -289,9 +329,10 @@ a {
 	}
 }
 
-.overlay{
-	
+.overlay {
+
 	visibility: hidden;
 	transition: 0.2s;
 }
+
 /* madara */
