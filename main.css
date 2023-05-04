@@ -4,7 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@800&display=swap');
 
 :root {
-	--color-burger: rgb(139, 47, 14);
+	--color-burger: #ffb637;
+	--color-primary: #176956;
+	/* --color-burger: #F6AE04	; */
 }
 
 html {
@@ -41,7 +43,7 @@ body::-webkit-scrollbar-thumb {
 	width: 100%;
 	align-items: center;
 	justify-content: center;
-	background-color: rgb(255, 204, 62);
+	background-color: #176956;
 	box-shadow: 0px 3px 5px rgba(168, 106, 30, 0.197);
 	position: fixed;
 	margin-top: -3.4rem;
@@ -194,7 +196,7 @@ a {
 }
 
 .gallery-container .opening-soon .opening {
-	color: rgb(255, 204, 62);
+	color: var(--color-primary);
 	margin: 5px;
 
 }
@@ -230,7 +232,7 @@ a {
 	/* flex: 1 1 0; */
 	max-width: 300px;
 	padding: 2rem 1rem;
-	background-color: rgb(230, 183, 55);
+	background-color: var(--color-primary);
 	left: -500px;
 	position: fixed;
 	z-index: 100;
@@ -344,6 +346,7 @@ a {
 	.nav-contact {
 		display: none;
 	}
+
 	.gallery-container .opening-soon {
 		flex-grow: 1;
 		font-family: 'Sora', sans-serif;
@@ -355,4 +358,5 @@ a {
 		flex-wrap: wrap;
 	}
 }
+
 /* madara */
